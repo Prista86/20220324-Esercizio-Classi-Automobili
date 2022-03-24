@@ -17,6 +17,7 @@ const car4 = new Car(4, 'Porsche', 'Cayman', 'Gpl', 'Arancione', 130, 'GG000HH')
 const ListaMacchine = [car1, car2, car3, car4];
 StampaListaDatiVettura();
 
+
 const btnP = document.getElementById('btnP');  //gestione bottone Precedente con incremento indice
 btnP.onclick = function () {
     indice--;
@@ -40,8 +41,8 @@ btnS.onclick = function () {
 function StampaListaDatiVettura() {  //completa la tabella con le info della classe
     const celId = document.getElementById('celId');
     celId.innerText = ListaMacchine[indice].id;
-    const celBrand = document.getElementById('celBrand');
-    celBrand.innerText = ListaMacchine[indice].brand;
+    const btnV = document.getElementById('btnV');
+    btnV.innerText = ListaMacchine[indice].brand;
     const celModello = document.getElementById('celModello');
     celModello.innerText = ListaMacchine[indice].modello;
     const celColore = document.getElementById('celColore');
@@ -52,18 +53,8 @@ function StampaListaDatiVettura() {  //completa la tabella con le info della cla
     celTarga.innerText = ListaMacchine[indice].targa;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$(document).ready(function(){
+    $('#btnV').click(function(){
+      $('.cel1').slideToggle();
+    });
+});

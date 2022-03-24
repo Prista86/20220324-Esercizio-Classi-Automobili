@@ -13,6 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- <link rel="stylesheet" href="style/mystyle.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
 </head>
@@ -27,34 +28,30 @@
             </div>
             <div class="col-5">
                 <br><br><br><br><br><br><br>
-                <table class="table">
+                <table class="table table-borderless">
                     <tr>
                         <th>Id:</th>
                         <td id="celId"></td>
-                    </tr>
-                    <tr>
-                        <th>Visualizzazione Dati:</th>
-                        <td id="celId"><button id="btnV" type="button" class="btn btn-outline-danger btn-lg">Clicca!</button></td>
-                    </tr>
+                    </tr>                    
                     <tr>
                         <th>Brand:</th>
-                        <td id="celBrand"></td>
+                        <td><button id="btnV" type="button" class="btn btn-outline-danger btn-lg">Clicca!</button></td>
                     </tr>
                     <tr>
                         <th>Modello:</th>
-                        <td id="celModello"></td>
+                        <td class="cel1" id="celModello"></td>
                     </tr>
                     <tr>
                         <th>Colore</th>
-                        <td id="celColore"></td>
+                        <td class="cel1" id="celColore"></td>
                     </tr>
                     <tr>
                         <th>Cavalli:</th>
-                        <td id="celCavalli"></td>
+                        <td class="cel1" id="celCavalli"></td>
                     </tr>
                     <tr>
                         <th>Targa:</th>
-                        <td id="celTarga"></td>
+                        <td class="cel1" id="celTarga"></td>
                     </tr>
                 </table>
             </div>
@@ -64,9 +61,11 @@
             </div>
         </div>
     </div>
+    
 
     <script src="script/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    
 
 </body>
 
